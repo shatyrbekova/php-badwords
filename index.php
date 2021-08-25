@@ -25,6 +25,8 @@
             echo "La lunghezza ha <b>{$length2} </b>caratteri<br/>";
             
         ?>
+
+        
     
     </main>
 </body>

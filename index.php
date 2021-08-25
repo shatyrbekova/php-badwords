@@ -10,10 +10,10 @@
     <main>
     
         <?php
-             $myParagraph = 'Esattamente come JavaScript, anche PHP è un tipo di linguaggio Case Sensitive,
+             $myParagraph = '<p>Esattamente come JavaScript, anche PHP è un tipo di linguaggio Case Sensitive,
              quindi facciamo attenzione a maiuscole e minuscole nei nomi delle variabili e delle funzioni.
              Se abbiamo un nome composto possiamo scegliere uno dei due stili: underscore $mia_variabile oppure camelCase $miaVariabile
-             Attenzione: spazi e - non sono ammessi!!!<br/>';
+             Attenzione: spazi e - non sono ammessi!!!</p><br/>';
              
             echo $myParagraph;
             $length = strlen($myParagraph);

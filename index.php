@@ -19,6 +19,10 @@
             $length = strlen($myParagraph);
             echo "La lunghezza ha <b>{$length} </b>caratteri<br/>";
             $wordToSearch = $_GET['word'];
+            $myParagraph = str_replace('JavaScript', '***', $myParagraph);
+            echo $myParagraph;
+            $length2 = strlen($myParagraph);
+            echo "La lunghezza ha <b>{$length2} </b>caratteri<br/>";
             
         ?>
     

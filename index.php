@@ -19,14 +19,23 @@
             $length = strlen($myParagraph);
             echo "La lunghezza ha <b>{$length} </b>caratteri<br/>";
             $wordToSearch = $_GET['word'];
-            $myParagraph = str_replace('JavaScript', '***', $myParagraph);
+            $myParagraph = str_replace($wordToSearch, '***', $myParagraph);
             echo $myParagraph;
             $length2 = strlen($myParagraph);
             echo "La lunghezza ha <b>{$length2} </b>caratteri<br/>";
             
         ?>
 
-        
+        <?php
+        $phrase = '<h1>Se abbiamo un nome composto possiamo scegliere uno dei due stili: underscore $mia_varia </h1>';
+        echo "$phrase";
+        $lunghezza = strlen($phrase);
+        echo"La lunghezza è $lunghezza";
+        $phrase = str_ireplace('abbiamo', '***', $phrase);
+        echo $phrase;
+        $length3 =strlen($phrase);
+        echo "La lunghezza $length3";
+        ?>
     
     </main>
 </body>

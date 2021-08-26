@@ -58,8 +58,16 @@
     $length = strlen($parola);
     echo "La stringa ha <b>$length </b> caratteri";
       ?>  
-    
-    
+    <?php
+    $loremText ='Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum voluptatum similique, excepturi maxime nam repellat recusandae ipsa ullam ratione illo porro eveniet molestiae qui quidem velit aut? Reprehenderit, commodi.';
+    $parolaDaCercare =$_GET['parola'];
+    $result =stripos($loremText, $parolaDaCercare);
+    if($result!== false){
+      echo "La parola $parolaDaCercare esiste ed è in posizione $result";
+    }else{
+      echo"La parola $parolaDaCercare non esiste";
+    }
+    ?>
     </main>
 </body>
 </html>
